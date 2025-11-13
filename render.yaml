@@ -2,7 +2,7 @@ services:
   - type: web
     name: wendu-backend
     env: node
-    buildCommand: npm install && npm run build && npx prisma migrate deploy
+    buildCommand: npm install && npm run build
     startCommand: npm start
     envVars:
       - key: NODE_VERSION
